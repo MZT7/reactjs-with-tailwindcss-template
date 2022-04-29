@@ -688,6 +688,12 @@ select {
 .z-0 {
   z-index: 0;
 }
+.z-30 {
+  z-index: 30;
+}
+.z-20 {
+  z-index: 20;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -757,6 +763,9 @@ select {
 }
 .mt-40 {
   margin-top: 10rem;
+}
+.mt-20 {
+  margin-top: 5rem;
 }
 .block {
   display: block;
