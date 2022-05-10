@@ -42,11 +42,11 @@ function Home() {
                             class="h-12 pr-4 bounce-top-icons"
                         /> */}
 
-                        <Link to="/register">
+                        {/* <Link to="/register">
                             <Button>Register</Button>
-                        </Link>
+                        </Link> */}
                         <Link to="/login">
-                            <Button>Login</Button>
+                            <Button>Get Started</Button>
                         </Link>
 
                         {/* <img
@@ -65,16 +65,16 @@ function Home() {
                 </div>
             </div>
 
-            <section class="container mx-auto px-6 p-10 rounded-lg my-5">
-                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
-                    Features
+            <section className="container mx-auto px-6 p-10 rounded-lg my-5">
+                <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+                    Our services
                 </h2>
-                <div class="flex items-center flex-wrap mb-20">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="text-3xl text-gray-800 font-bold mb-3">
+                <div className="flex items-center flex-wrap mb-20">
+                    <div className="w-full md:w-1/2">
+                        <h4 className="text-3xl text-gray-800 font-bold mb-3">
                             For your business
                         </h4>
-                        <p class="text-gray-600 mb-8">
+                        <p className="text-gray-600 mb-8">
                             We help you expand your customer's reach from Local
                             to statewide by connecting you to more customers
                             through the best logistics companies that suits you
@@ -84,37 +84,41 @@ function Home() {
                             and most convenient delivery you can get.
                         </p>
                     </div>
-                    <div class="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2">
                         {/* <img src="assets/health.svg" alt="Monitoring" /> */}
                     </div>
                 </div>
 
-                <div class="flex items-center flex-wrap mb-20">
-                    <div class="w-full md:w-1/2">
+                <div className="flex items-center flex-wrap mb-20">
+                    <div className="w-full md:w-1/2">
                         {/* <img src="assets/report.svg" alt="Reporting" /> */}
                     </div>
-                    <div class="w-full md:w-1/2 pl-10">
-                        <h4 class="text-3xl text-gray-800 font-bold mb-3">
+                    <div className="w-full md:w-1/2 pl-10">
+                        <h4 className="text-3xl text-gray-800 font-bold mb-3">
                             For our Logistics Partners
                         </h4>
-                        <p class="text-gray-600 mb-8">
-                            We got You! We guarantee you more orders and more
-                            customers, we provide you with real time tracking to
-                            put your mind at ease and keep you up to speed with
-                            your bikes and delivery and also handle your
-                            delivery hassles by providing you a per kilometer
-                            pricing that is good for you and convenient for the
-                            your Customers!
-                        </p>
+                        <div>
+                            <p className="text-gray-600 mb-8">
+                                We got You! We guarantee you more orders and
+                                more customers, we provide you with real time
+                                tracking to put your mind at ease and keep you
+                                up to speed with your bikes and delivery and
+                                also handle your delivery hassles by providing
+                                you a per kilometer pricing that is good for you
+                                and convenient for the your Customers!
+                            </p>
+                        </div>
+
+                        {/* <img src="assets/sync.svg" alt="Syncing" /> */}
                     </div>
                 </div>
 
-                <div class="flex items-center flex-wrap mb-20">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="text-3xl text-gray-800 font-bold mb-3">
+                <div className="flex items-center flex-wrap mb-20">
+                    <div className="w-full md:w-1/2">
+                        <h4 className="text-3xl text-gray-800 font-bold mb-3">
                             And to our Customers
                         </h4>
-                        <p class="text-gray-600 mb-8">
+                        <p className="text-gray-600 mb-8">
                             You're our heart! We understand you, whether you've
                             a once in a while delivery needs or frequently, we
                             are here for you, giving you good rates and
@@ -125,9 +129,7 @@ function Home() {
                             support!
                         </p>
                     </div>
-                    <div class="w-full md:w-1/2">
-                        {/* <img src="assets/sync.svg" alt="Syncing" /> */}
-                    </div>
+                    <div className="w-full md:w-1/2"></div>
                 </div>
             </section>
         </div>

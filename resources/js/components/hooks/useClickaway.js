@@ -4,8 +4,8 @@ import { useRef, useEffect, useState } from "react";
  * Hook that alerts clicks outside of the passed ref
  */
 
-function useClickaway(handler) {
-    const ref = useRef(null);
+function useClickaway(ref, handler) {
+    //const ref = useRef(null);
 
     useEffect(() => {
         // Bind the event listener
@@ -23,7 +23,7 @@ function useClickaway(handler) {
         };
     }, [ref, handler]);
 
-    return { ref };
+    // return { ref };
 }
 
 export default useClickaway;
