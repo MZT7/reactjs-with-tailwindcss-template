@@ -54,7 +54,7 @@ function Login() {
         return console.log("missing input");
     };
     return (
-        <div className="max-w-md p-4 rounded-lg bg-white border  border-gray-400 shadow-md mx-auto px-6">
+        <div className="max-w-md p-4 rounded-lg bg-white border  border-gray-400 shadow-md mx-auto px-6 flex-grow-1">
             <Form onSubmit={onsubmit}>
                 <Label for="email">Email</Label>
                 <Input
