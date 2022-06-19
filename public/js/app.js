@@ -6240,7 +6240,8 @@ function Home() {
                 _context.next = 2;
                 return _api_Axios__WEBPACK_IMPORTED_MODULE_8__["default"].get("api/task").then(function (res) {
                   var tasks = res.data;
-                  setDatas(tasks); // console.log(data);
+                  setDatas(tasks);
+                  console.log(datas.id);
                 });
 
               case 2:

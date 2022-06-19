@@ -23,7 +23,7 @@ function Home() {
             const info = await axios.get("api/task").then((res) => {
                 const tasks = res.data;
                 setDatas(tasks);
-                // console.log(data);
+                console.log(datas.id);
             });
         };
 
