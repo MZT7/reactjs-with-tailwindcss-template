@@ -5540,8 +5540,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
  // axios.defaults.headers.common["Authorization"] = "sometoken";
+// const base_URL = "https://moadvice.herokuapp.com/";
 
-var base_URL = "https://moadvice.herokuapp.com/";
+var base_URL = "http://127.0.0.1:8000";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (axios__WEBPACK_IMPORTED_MODULE_0___default().create({
   baseURL: base_URL
 }));
@@ -6208,15 +6209,25 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function Home() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(null),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(""),
       _useState2 = _slicedToArray(_useState, 2),
-      task = _useState2[0],
-      setTask = _useState2[1];
+      input = _useState2[0],
+      setInput = _useState2[1];
 
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)([]),
       _useState4 = _slicedToArray(_useState3, 2),
       datas = _useState4[0],
       setDatas = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(null),
+      _useState6 = _slicedToArray(_useState5, 2),
+      loaded = _useState6[0],
+      setLoaded = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      edit = _useState8[0],
+      setEdit = _useState8[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(function () {
     var Taskall = /*#__PURE__*/function () {
@@ -6249,83 +6260,172 @@ function Home() {
     }();
 
     Taskall();
-  }, [task]);
-  console.log(datas);
+  }, [input, loaded]);
+  (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(function () {
+    if (edit) {
+      setInput(edit.name);
+    } else {
+      setInput("");
+    }
+  }, [setInput, edit]); // console.log(datas);
+  //*input input
 
   var handleInput = function handleInput(e) {
     var Task = e.target.value; // console.log(value);
 
-    setTask(Task);
-    console.log(task);
-  };
+    setInput(Task); // console.log(input);
+  }; //*end input
+  //*On submit post api
+
 
   var onsubmit = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2(e) {
-      var response;
+      var response, _response;
+
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
               e.preventDefault();
 
-              if (!task) {
-                _context2.next = 13;
+              if (edit) {
+                _context2.next = 14;
                 break;
               }
 
               _context2.prev = 2;
               _context2.next = 5;
               return _api_Axios__WEBPACK_IMPORTED_MODULE_8__["default"].post("api/task", {
-                name: task
-              } // JSON.stringify({
-              // })
-              );
+                name: input
+              });
 
             case 5:
               response = _context2.sent;
-              console.log(response.data);
-              _context2.next = 11;
+              _context2.next = 10;
               break;
 
-            case 9:
-              _context2.prev = 9;
+            case 8:
+              _context2.prev = 8;
               _context2.t0 = _context2["catch"](2);
 
-            case 11:
-              setTask(null);
-              return _context2.abrupt("return", console.log(task));
-
-            case 13:
-              return _context2.abrupt("return", console.log("missing input"));
+            case 10:
+              setInput("");
+              return _context2.abrupt("return", console.log(input));
 
             case 14:
+              _context2.prev = 14;
+              _context2.next = 17;
+              return _api_Axios__WEBPACK_IMPORTED_MODULE_8__["default"].put("api/task/".concat(edit.id), {
+                name: input
+              });
+
+            case 17:
+              _response = _context2.sent;
+              _context2.next = 22;
+              break;
+
+            case 20:
+              _context2.prev = 20;
+              _context2.t1 = _context2["catch"](14);
+
+            case 22:
+              setInput("");
+              setEdit("");
+              return _context2.abrupt("return", console.log(input));
+
+            case 25:
             case "end":
               return _context2.stop();
           }
         }
-      }, _callee2, null, [[2, 9]]);
+      }, _callee2, null, [[2, 8], [14, 20]]);
     }));
 
     return function onsubmit(_x) {
       return _ref2.apply(this, arguments);
     };
-  }();
+  }(); //*end Onsubmit
+
+
+  var updateT = function updateT(Eid) {
+    var newE = datas.find(function (data) {
+      return data.id === Eid;
+    });
+    setEdit(newE);
+    return console.log();
+  }; //*delete api
+
+
+  var del = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(id) {
+      var response;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              setLoaded(false);
+              _context3.prev = 1;
+
+              if (!id) {
+                _context3.next = 6;
+                break;
+              }
+
+              _context3.next = 5;
+              return _api_Axios__WEBPACK_IMPORTED_MODULE_8__["default"]["delete"]("api/delete/".concat(id));
+
+            case 5:
+              response = _context3.sent;
+
+            case 6:
+              setLoaded(true);
+              _context3.next = 11;
+              break;
+
+            case 9:
+              _context3.prev = 9;
+              _context3.t0 = _context3["catch"](1);
+
+            case 11:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3, null, [[1, 9]]);
+    }));
+
+    return function del(_x2) {
+      return _ref3.apply(this, arguments);
+    };
+  }(); //*end delete
+  //todo  turn to todo component
+
 
   var word = datas.map(function (data) {
-    console.log(data);
+    // console.log(data);
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("li", {
       className: "p-2",
-      children: [data.name, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-        className: "bg-green-200 mx-5 p-2 my-5 rounded-lg",
+      children: [data.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+        className: "bg-green-200 mx-5 p-2 my-5 rounded-lg cursor-pointer",
+        onClick: function onClick() {
+          return updateT(data.id);
+        },
         children: "edit"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-        className: "bg-red-200 mx-5 p-2 my-5 rounded-lg",
+        className: "bg-red-200 mx-5 p-2 my-5 rounded-lg cursor-pointer",
+        onClick: function onClick() {
+          return del(data.id);
+        },
         children: "delete"
       })]
     }, data.id);
-  });
+  }); // todo close
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h1", {
+      className: "text-center p-3 text-3xl text-gray-800 font-bold",
+      children: "CRUD APP"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
       className: "max-w-md p-4 rounded-lg bg-white border   border-gray-400 shadow-md mx-auto px-6 flex-grow-1",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_ads_Form__WEBPACK_IMPORTED_MODULE_6__["default"], {
         onSubmit: onsubmit,
@@ -6335,13 +6435,13 @@ function Home() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ads_Input__WEBPACK_IMPORTED_MODULE_5__["default"], {
           id: "task",
           name: "task",
-          onChange: handleInput // value={task}
-          ,
+          onChange: handleInput,
+          value: input,
           required: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
           type: "submit",
           className: "bg-gray-700 text-gray-100 px-3 py-2 rounded-md shadow-md inline-flex",
-          children: "Create task"
+          children: edit ? "Ok" : "Create Task"
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {

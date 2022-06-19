@@ -91,7 +91,18 @@ class TaskController extends Controller
      */
     public function update(Request $request, Task $task)
     {
-        //
+        $task->update([
+
+            'name' => $request->name,
+
+        ]);
+
+        $response = [
+            'msg' => 'successful',
+
+        ];
+
+        return response()->json($response, 201);
     }
 
     /**
@@ -102,6 +113,12 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
-        //
+        $task->delete();
+        $response = [
+            'msg' => 'successful',
+
+        ];
+
+        return response()->json($response, 201);
     }
 }
