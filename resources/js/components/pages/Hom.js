@@ -10,7 +10,7 @@ import Form from "../ads/Form";
 import { useAuth } from "../context/auth";
 import { useNavigate } from "react-router-dom";
 // import axios from "axios";
-import axios from "../api/Axios";
+// import axios from "../api/Axios";
 
 import React from "react";
 
