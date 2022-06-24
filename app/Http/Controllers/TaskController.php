@@ -121,4 +121,25 @@ class TaskController extends Controller
 
         return response()->json($response, 201);
     }
+
+    public function comments()
+    {
+        $comment_ids = Comment::where("post_id", $this->id)->get();
+
+        $comment_id = $comment_ids->map(function ($item, $key) {
+            return Comment::find($item->id);
+        });
+        return $comment_id;
+    }
+
+
+    public function comm()
+    {
+        $comment_ids = Comment::where("post_id", $this->id)->get();
+
+        foreach ($comment_ids as $key => $value) {
+            Comment::find($value->id);
+        }
+        // return $comment_id
+    }
 }

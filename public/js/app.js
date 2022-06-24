@@ -6111,13 +6111,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function Layout(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     className: "relative min-h-screen bg-gray-200",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("main", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inc_Header__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("main", {
       className: "min-h-screen pt-52",
       children: props.children
-    })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inc_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {})]
   });
 }
 
@@ -6162,39 +6163,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ads_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ads/Button */ "./resources/js/components/ads/Button.js");
-/* harmony import */ var _img_deli_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/deli.jpg */ "./resources/js/components/img/deli.jpg");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _ads_Label__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ads/Label */ "./resources/js/components/ads/Label.js");
-/* harmony import */ var _ads_Input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ads/Input */ "./resources/js/components/ads/Input.js");
-/* harmony import */ var _ads_Form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ads/Form */ "./resources/js/components/ads/Form.js");
-/* harmony import */ var _context_auth__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../context/auth */ "./resources/js/components/context/auth.js");
-/* harmony import */ var _api_Axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../api/Axios */ "./resources/js/components/api/Axios.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _ads_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ads/Button */ "./resources/js/components/ads/Button.js");
+/* harmony import */ var _img_deli_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/deli.jpg */ "./resources/js/components/img/deli.jpg");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _ads_Label__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ads/Label */ "./resources/js/components/ads/Label.js");
+/* harmony import */ var _ads_Input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ads/Input */ "./resources/js/components/ads/Input.js");
+/* harmony import */ var _ads_Form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ads/Form */ "./resources/js/components/ads/Form.js");
+/* harmony import */ var _context_auth__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../context/auth */ "./resources/js/components/context/auth.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
- // import React from "react";
-// import { Link } from "react-router-dom";
-
+ // import React, { useContext, useState, useEffect } from "react";
 
 
 
@@ -6202,258 +6183,107 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
  // import axios from "axios";
+// import axios from "../api/Axios";
 
 
 
 
-
-
-function Home() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(""),
-      _useState2 = _slicedToArray(_useState, 2),
-      input = _useState2[0],
-      setInput = _useState2[1];
-
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)([]),
-      _useState4 = _slicedToArray(_useState3, 2),
-      datas = _useState4[0],
-      setDatas = _useState4[1];
-
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(null),
-      _useState6 = _slicedToArray(_useState5, 2),
-      loaded = _useState6[0],
-      setLoaded = _useState6[1];
-
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(""),
-      _useState8 = _slicedToArray(_useState7, 2),
-      edit = _useState8[0],
-      setEdit = _useState8[1];
-
-  (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(function () {
-    var Taskall = /*#__PURE__*/function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
-        var info;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return _api_Axios__WEBPACK_IMPORTED_MODULE_8__["default"].get("api/task").then(function (res) {
-                  var tasks = res.data;
-                  setDatas(tasks);
-                  console.log(datas.id);
-                });
-
-              case 2:
-                info = _context.sent;
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      return function Taskall() {
-        return _ref.apply(this, arguments);
-      };
-    }();
-
-    Taskall();
-  }, [input, loaded]);
-  (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(function () {
-    if (edit) {
-      setInput(edit.name);
-    } else {
-      setInput("");
-    }
-  }, [setInput, edit]); // console.log(datas);
-  //*input input
-
-  var handleInput = function handleInput(e) {
-    var Task = e.target.value; // console.log(value);
-
-    setInput(Task); // console.log(input);
-  }; //*end input
-  //*On submit post api
-
-
-  var onsubmit = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2(e) {
-      var response, _response;
-
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              e.preventDefault();
-
-              if (edit) {
-                _context2.next = 14;
-                break;
-              }
-
-              _context2.prev = 2;
-              _context2.next = 5;
-              return _api_Axios__WEBPACK_IMPORTED_MODULE_8__["default"].post("api/task", {
-                name: input
-              });
-
-            case 5:
-              response = _context2.sent;
-              _context2.next = 10;
-              break;
-
-            case 8:
-              _context2.prev = 8;
-              _context2.t0 = _context2["catch"](2);
-
-            case 10:
-              setInput("");
-              return _context2.abrupt("return", console.log(input));
-
-            case 14:
-              _context2.prev = 14;
-              _context2.next = 17;
-              return _api_Axios__WEBPACK_IMPORTED_MODULE_8__["default"].put("api/task/".concat(edit.id), {
-                name: input
-              });
-
-            case 17:
-              _response = _context2.sent;
-              _context2.next = 22;
-              break;
-
-            case 20:
-              _context2.prev = 20;
-              _context2.t1 = _context2["catch"](14);
-
-            case 22:
-              setInput("");
-              setEdit("");
-              return _context2.abrupt("return", console.log(input));
-
-            case 25:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, _callee2, null, [[2, 8], [14, 20]]);
-    }));
-
-    return function onsubmit(_x) {
-      return _ref2.apply(this, arguments);
-    };
-  }(); //*end Onsubmit
-
-
-  var updateT = function updateT(Eid) {
-    var newE = datas.find(function (data) {
-      return data.id === Eid;
-    });
-    setEdit(newE);
-    return console.log();
-  }; //*delete api
-
-
-  var del = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(id) {
-      var response;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
-        while (1) {
-          switch (_context3.prev = _context3.next) {
-            case 0:
-              setLoaded(false);
-              _context3.prev = 1;
-
-              if (!id) {
-                _context3.next = 6;
-                break;
-              }
-
-              _context3.next = 5;
-              return _api_Axios__WEBPACK_IMPORTED_MODULE_8__["default"]["delete"]("api/delete/".concat(id));
-
-            case 5:
-              response = _context3.sent;
-
-            case 6:
-              setLoaded(true);
-              _context3.next = 11;
-              break;
-
-            case 9:
-              _context3.prev = 9;
-              _context3.t0 = _context3["catch"](1);
-
-            case 11:
-            case "end":
-              return _context3.stop();
-          }
-        }
-      }, _callee3, null, [[1, 9]]);
-    }));
-
-    return function del(_x2) {
-      return _ref3.apply(this, arguments);
-    };
-  }(); //*end delete
-  //todo  turn to todo component
-
-
-  var word = datas.map(function (data) {
-    // console.log(data);
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("li", {
-      className: "p-2",
-      children: [data.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-        className: "bg-green-200 mx-5 p-2 my-5 rounded-lg cursor-pointer",
-        onClick: function onClick() {
-          return updateT(data.id);
-        },
-        children: "edit"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-        className: "bg-red-200 mx-5 p-2 my-5 rounded-lg cursor-pointer",
-        onClick: function onClick() {
-          return del(data.id);
-        },
-        children: "delete"
-      })]
-    }, data.id);
-  }); // todo close
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h1", {
-      className: "text-center p-3 text-3xl text-gray-800 font-bold",
-      children: "CRUD APP"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-      className: "max-w-md p-4 rounded-lg bg-white border   border-gray-400 shadow-md mx-auto px-6 flex-grow-1",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_ads_Form__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        onSubmit: onsubmit,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ads_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          "for": "task",
-          children: "Task"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ads_Input__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          id: "task",
-          name: "task",
-          onChange: handleInput,
-          value: input,
-          required: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
-          type: "submit",
-          className: "bg-gray-700 text-gray-100 px-3 py-2 rounded-md shadow-md inline-flex",
-          children: edit ? "Ok" : "Create Task"
+var Home = function Home() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    className: "min-h-full bg-gray-200" // style={{
+    //     backgroundRepeat: `no-repeat`,
+    //     backgroundPosition: `center`,
+    //     backgroundSize: `auto`,
+    //     backgroundImage: `url(
+    //        ${Bg}
+    //     )`,
+    // }}
+    ,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      className: "container pt-32 lg:pt-40 px-6 mx-auto flex flex-wrap flex-col lg:flex-row items-center",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        className: "flex flex-col w-full lg:w-2/5 justify-center xl:items-start overflow-y-hidden mx-auto text-right",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
+          className: "my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center slide-in-bottom-h1",
+          children: "Connecting you to your logistics"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+          className: "leading-normal text-base md:text-2xl mb-8 text-center slide-in-bottom-subtitle",
+          children: "1..2..3.. delifast.. get your logistics on the move and tracking ID in 4 Clicks"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "w-full lg:w-3/5 py-6 overflow-y-hidden mx-auto lg:hidden",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+            className: "w-5/6 mx-auto lg:mr-0 slide-in-bottom h-3/4 max-h-80 object-contain",
+            src: _img_deli_jpg__WEBPACK_IMPORTED_MODULE_1__["default"]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "lg:flex w-full lg:justify-center pb-24 lg:pb-0 fade-in text-center",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link, {
+            to: "/login",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_ads_Button__WEBPACK_IMPORTED_MODULE_0__["default"], {
+              children: "Get Started"
+            })
+          })
         })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-      className: "max-w-md pt-5 rounded-lg  h-10 mx-auto",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("ul", {
-        className: "text-center bg-gray-300",
-        children: word
-      })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        className: "w-full lg:w-3/5 py-6 overflow-y-hidden mx-auto hidden lg:flex",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+          className: "w-5/6 mx-auto lg:mr-0 slide-in-bottom h-3/4 max-h-80 object-contain bg-grey-300",
+          src: _img_deli_jpg__WEBPACK_IMPORTED_MODULE_1__["default"]
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("section", {
+      className: "container mx-auto px-6 p-10 rounded-lg my-5",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h2", {
+        className: "text-4xl font-bold text-center text-gray-800 mb-8",
+        children: "Our Services"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        className: "flex items-center flex-wrap mb-20",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          className: "w-full md:w-1/2",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+            className: "text-3xl text-gray-800 font-bold mb-3",
+            children: "For your business"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+            className: "text-gray-600 mb-8",
+            children: "We help you expand your customer's reach from Local to statewide by connecting you to more customers through the best logistics companies that suits you and your customer's cost and needs, we assingn you the closest bike to pick up your customer's order and provide Real time tracking to ensure the fastest and most convenient delivery you can get."
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "w-full md:w-1/2"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        className: "flex items-center flex-wrap mb-20",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "w-full md:w-1/2"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          className: "w-full md:w-1/2 pl-10",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+            className: "text-3xl text-gray-800 font-bold mb-3",
+            children: "For our Logistics Partners"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+              className: "text-gray-600 mb-8",
+              children: "We got You! We guarantee you more orders and more customers, we provide you with real time tracking to put your mind at ease and keep you up to speed with your bikes and delivery and also handle your delivery hassles by providing you a per kilometer pricing that is good for you and convenient for the your Customers!"
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        className: "flex items-center flex-wrap mb-20",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          className: "w-full md:w-1/2",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+            className: "text-3xl text-gray-800 font-bold mb-3",
+            children: "And to our Customers"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+            className: "text-gray-600 mb-8",
+            children: "You're our heart! We understand you, whether you've a once in a while delivery needs or frequently, we are here for you, giving you good rates and convenience with our real time tracking, we know where a Man's treasure is his heart's there too, you can monitor your heart on the way and we are one call away with our always available customer's support!"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "w-full md:w-1/2"
+        })]
+      })]
     })]
   });
-}
+};
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
 
