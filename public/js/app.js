@@ -6200,12 +6200,12 @@ var Home = function Home() {
     // }}
     ,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-      className: "container pt-32 lg:pt-40 px-6 mx-auto flex flex-wrap flex-col lg:flex-row items-center",
+      className: "container pt-14 lg:pt-14 px-6 mx-auto flex flex-wrap flex-col lg:flex-row items-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "flex flex-col w-full lg:w-2/5 justify-center xl:items-start overflow-y-hidden mx-auto text-right",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
           className: "my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center slide-in-bottom-h1",
-          children: "Connected"
+          children: "Connecting you to your logistics"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
           className: "leading-normal text-base md:text-2xl mb-8 text-center slide-in-bottom-subtitle",
           children: "1..2..3.. delifast.. get your logistics on the move and tracking ID in 4 Clicks"

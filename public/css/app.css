@@ -1074,6 +1074,9 @@ select {
 .pl-10 {
   padding-left: 2.5rem;
 }
+.pt-14 {
+  padding-top: 3.5rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1535,6 +1538,18 @@ select {
 
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .lg\:pt-14 {
+    padding-top: 3.5rem;
   }
 }
 @media (min-width: 1280px) {
