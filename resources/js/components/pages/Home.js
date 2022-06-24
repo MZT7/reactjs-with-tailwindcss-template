@@ -29,7 +29,7 @@ const Home = () => {
                 {/* <!--Left Col--> */}
                 <div className="flex flex-col w-full lg:w-2/5 justify-center xl:items-start overflow-y-hidden mx-auto text-right">
                     <h1 className="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center slide-in-bottom-h1">
-                        Connecting you to your logistics
+                        Connected
                     </h1>
                     <p className="leading-normal text-base md:text-2xl mb-8 text-center slide-in-bottom-subtitle">
                         1..2..3.. delifast.. get your logistics on the move and
